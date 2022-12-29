@@ -1,7 +1,6 @@
 .eslintrc.cjs 
 .DS_Store
 *.local
-*.cjs
 .prettierrc.cjs 
 *.d.ts
 package-lock.json 
