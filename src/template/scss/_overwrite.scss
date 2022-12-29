@@ -1,0 +1,25 @@
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// scss-docs-start theme-colors-rgb
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, '$value');
+// scss-docs-end theme-colors-rgb
+
+// scss-docs-start utilities-colors
+$utilities-colors: map-merge(
+	$theme-colors-rgb,
+	(
+		'black': to-rgb($black),
+		'white': to-rgb($white),
+		'body': to-rgb($body-color),
+	)
+);
+// scss-docs-end utilities-colors
+
+// scss-docs-start utilities-text-colors
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, '$key', 'text');
+// scss-docs-end utilities-text-colors
+
+// scss-docs-start utilities-bg-colors
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, '$key', 'bg');
+// scss-docs-end utilities-bg-colors

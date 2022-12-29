@@ -1,0 +1,81 @@
+//Helper
+$page-wrapper-bg: #edf1f5;
+$shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+$sidebar-width: 236px;
+$collapsed-sidebar-width: 56px;
+$page-wrapper-padding-top: 57px;
+
+$page-border-color: var(--bs-gray-300, #dee2e6);
+$page-color-white: var(--bs-white, #fff);
+$page-color-primary: #464df2;
+$page-color-light: var(--bs-light, #f8f9fa);
+
+$form-material-color: var(--bs-gray-200, #e9ecef);
+
+//Tabs
+$nav-tabs-link-color: var(--bs-gray-700, inherit);
+
+//preloader
+$preloader-bg: rgba(0, 0, 0, 0.5);
+$preloader-color: $page-color-white;
+
+//theme
+$themecolor: $page-color-primary;
+$themecolor-alt: $themecolor;
+$sidebar: #ffffff;
+$sidebar-alt: #FDFDFD;
+$sidebar-text: #6c757d;
+$sidebar-icons: $sidebar-text;
+
+//=========== BOTSTRAP VARIABLES=========
+
+// scss-docs-start color-variables
+$white: #fff;
+$blue: #2196f3;
+$red: #f62d51;
+$yellow: #ffbc34;
+$green: #55ce63;
+$cyan: #03a9f3;
+// scss-docs-end color-variables
+
+// // scss-docs-start theme-color-variables
+$primary: $themecolor;
+$secondary: #607d8b;
+$dark: #2c3645;
+// // scss-docs-end theme-color-variables
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio: 2;
+
+// scss-docs-start navbar-theme-variables
+$navbar-dark-color: rgba($white, 0.7);
+$navbar-dark-hover-color: rgba($white, 0.9);
+
+// scss-docs-start card-variables
+$card-border-color: transparent;
+// scss-docs-end card-variables
+
+// scss-docs-start table-variables
+$table-striped-bg: #f8f9fa;
+$table-hover-bg: #e9ecef;
+// scss-docs-end table-variables
+
+// scss-docs-start badge-variables
+$badge-padding-y: 0.25em;
+$badge-padding-x: 0.45em;
+// scss-docs-end badge-variables
+
+$enable-negative-margins: true;
+
+//=========custom my variables=========
+// Create your own map
+$custom-colors: (
+	'accent': #34495e,
+	'indigo': #3f51b5,
+	'indigo-dark': #303f9f,
+	'green': #4caf50,
+	'green-dark': #388e3c,
+	'blue': #2196f3,
+	'blue-dark': #1976d2,
+);

@@ -8,11 +8,20 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"format": "prettier --write .",
-    "lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
+		"lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.2.1",
+		"@fortawesome/free-regular-svg-icons": "^6.2.1",
+		"@fortawesome/free-solid-svg-icons": "^6.2.1",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@popperjs/core": "^2.11.6",
+		"bootstrap": "^5.2.3",
+		"perfect-scrollbar": "^1.5.5",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"sweetalert2": "^11.6.16",
+		"toastmejs": "^1.2.7"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.26",
@@ -27,6 +36,7 @@
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-react": "^7.31.11",
 		"prettier": "^2.8.1",
+		"sass": "^1.57.1",
 		"typescript": "^4.9.4",
 		"vite": "^4.0.0"
 	}

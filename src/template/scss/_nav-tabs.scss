@@ -1,0 +1,63 @@
+.nav-tabs-filled {
+	background-color: var(--bs-white, #fff);
+
+	li {
+		.nav-link {
+			border: 0px;
+			margin-right: 3px;
+			color: $nav-tabs-link-color;
+
+			&.active {
+				background-color: $page-color-primary;
+				color: $page-color-white;
+			}
+
+			&:hover {
+				color: $page-color-white;
+				background-color: $page-color-primary;
+			}
+		}
+	}
+}
+
+.nav-tabs-flat {
+	background-color: var(--bs-white, #fff);
+
+	li {
+		.nav-link {
+			border-color: transparent;
+			// font-weight: 600;
+			opacity: 0.875;
+			color: $nav-tabs-link-color;
+
+			&.active,
+			&.active:focus,
+			&:focus {
+				border-color: transparent;
+				border-bottom: 2px solid $page-color-primary;
+				color: $page-color-primary;
+				opacity: 1;
+			}
+
+			&:hover {
+				border-color: transparent;
+				border-bottom: 2px solid $page-color-primary;
+				opacity: 0.9;
+			}
+		}
+	}
+}
+
+.nav-actions {
+	display: block;
+	// padding: $nav-link-padding-y $nav-link-padding-x;
+	padding-right: $nav-link-padding-x;
+	padding-top: $nav-link-padding-y;
+}
+
+.tab-pane > {
+	.card {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+}

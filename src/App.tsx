@@ -1,5 +1,7 @@
+import Admin from './layouts/Admin';
+
 const App = (): JSX.Element => {
-	return <div className="App">App</div>;
+	return <Admin />;
 };
 
 export default App;

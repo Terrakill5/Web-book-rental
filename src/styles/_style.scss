@@ -1,0 +1,294 @@
+// ========================= Styles ===========================
+.group__text {
+	background-color: $white;
+	min-width: 2.5rem;
+	margin-right: 0.25rem;
+	max-width: 4rem;
+}
+
+// map styles end
+.forms-sm {
+	.form-label {
+		margin-bottom: $input-padding-y-sm;
+	}
+}
+
+.forms-xs {
+	.form-label {
+		margin-bottom: calc($input-padding-y-sm / 2);
+	}
+}
+
+.form-control-xs {
+	padding: calc($input-padding-y-sm / 2) calc($input-padding-x-sm / 2);
+	font-size: $font-size-sm * 0.875;
+	border-radius: calc($input-border-radius-sm * 0.75);
+}
+
+.form-label-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+	margin-bottom: 0.05rem;
+}
+
+.btn__download {
+	background-color: transparent;
+	margin-top: -0.25rem;
+	margin-bottom: -0.25rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+
+	&:hover {
+		border-color: #2962ff;
+		background-color: transparent;
+	}
+}
+
+// ================ Customizing Vendor Styles =================
+// toastme start
+.toastme {
+	z-index: 9999;
+
+	.toastme-ico {
+		&:before {
+			width: 20px;
+			height: 20px;
+			filter: invert(100%);
+		}
+	}
+
+	.toastme-close {
+		width: 25px;
+
+		&:after {
+			filter: invert(100%);
+		}
+	}
+}
+
+.is__control__calidad {
+	.input-group {
+		.react__select .rs_react__control {
+			.rs_react__single-value--is-disabled,
+			.rs_react__placeholder {
+				color: var(--bs-primary, #00a39c);
+			}
+		}
+
+		.form-control {
+			color: var(--bs-primary, #00a39c);
+		}
+	}
+}
+
+// toastme end
+
+.input-group {
+	.react__select {
+		position: relative;
+		flex: 1 1 auto;
+		width: 1%;
+		min-width: 0;
+
+		.rs_react__control {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+	.react-datepicker-wrapper {
+		position: relative;
+		flex: 1 1 auto;
+		width: 1%;
+		min-width: 0;
+
+		.form-control {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+}
+.input-group-sm {
+	.input-group-text:has(.form-switch) {
+		padding-right: 0.15rem;
+		padding-left: 0.15rem;
+	}
+}
+
+// react-select start
+.react__select {
+	.rs_react__control {
+		&:hover,
+		&.rs_react__control--is-focused {
+			border-color: $input-focus-border-color;
+			outline: 0;
+			box-shadow: $input-focus-box-shadow;
+		}
+
+		.rs_react__input-container {
+			color: var(--bs-body-colo, #212529);
+		}
+
+		.rs_react__placeholder {
+			color: var(--bs-secondary, #607d8b);
+			overflow-x: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+		&--is-disabled {
+			background-color: $input-disabled-bg;
+			border-color: $input-border-color;
+		}
+
+		.rs_react__single-value {
+			&--is-disabled {
+				color: var(--bs-body-colo, #212529);
+			}
+		}
+	}
+}
+
+.react__select__sm {
+	.rs_react__control {
+		min-height: 31px;
+		height: 31px;
+		border-radius: $input-border-radius-sm;
+		min-width: 60px;
+
+		.rs_react__input-container {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.rs_react__value-container {
+			font-size: $input-font-size-sm;
+			padding: calc($input-padding-y-sm / 2) calc($input-padding-x-sm / 2);
+		}
+
+		.rs_react__indicators {
+			// .rs_react__indicator-separator {
+			// }
+			.rs_react__clear-indicator,
+			.rs_react__dropdown-indicator {
+				padding: $input-padding-y-sm;
+			}
+		}
+	}
+
+	.rs_react__menu {
+		font-size: $input-font-size-sm;
+	}
+}
+
+.react__select__xs {
+	.rs_react__control {
+		min-height: 24.375px;
+		height: 24.375px;
+		border-radius: calc($input-border-radius-sm * 0.75);
+
+		.rs_react__input-container {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.rs_react__value-container {
+			font-size: $input-font-size-sm * 0.875;
+			padding: calc($input-padding-y-sm / 3) calc($input-padding-x-sm / 2);
+		}
+
+		.rs_react__indicators {
+			// .rs_react__indicator-separator {
+			// }
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+
+			.rs_react__clear-indicator,
+			.rs_react__dropdown-indicator {
+				padding: calc($input-padding-y-sm / 3);
+			}
+		}
+	}
+
+	.rs_react__menu {
+		font-size: $input-font-size-sm * 0.875;
+	}
+}
+
+.react__select_density {
+	&.react__select__sm {
+		.rs_react__control {
+			.rs_react__indicators {
+				.rs_react__clear-indicator {
+					padding: 0;
+
+					svg {
+						width: 15px;
+					}
+				}
+
+				.rs_react__dropdown-indicator {
+					padding: 0 0.1rem 0;
+
+					svg {
+						width: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// react-select end
+
+// react-datepicker start
+.react-datepicker__close-icon {
+	&::after {
+		border-radius: $input-border-radius-sm;
+		padding: $input-padding-y-sm $input-padding-x-sm;
+		font-size: $input-font-size-sm;
+	}
+}
+
+.react-datepicker__year {
+	&-wrapper {
+		max-width: 204px;
+	}
+}
+
+.react-datepicker__month {
+	.react-datepicker__month-text,
+	.react-datepicker__quarter-text {
+		width: 4.5rem;
+	}
+}
+
+// react-datepicker end
+
+// forms__input__uppercase start
+.forms__input__uppercase {
+	input,
+	select,
+	textarea,
+	.rs_react__control {
+		text-transform: uppercase;
+	}
+}
+// forms__input__uppercase end
+
+// Hide Arrows From Input Number
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+// Hide Arrows From Input Number

@@ -1,0 +1,28 @@
+@import 'variables';
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+@import 'overwrite';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// template - theme
+@import 'spinner';
+@import 'header';
+@import 'sidebar';
+@import 'app';
+@import 'theme-settings';
+@import 'auth';
+@import 'topbar-mail';
+@import 'responsive';
+
+@import 'form-material';
+@import 'nav-tabs';
+@import 'fieldset';
+@import 'accordion';
+@import 'skin';
+
+//perfect-scrollbar
+@import 'node_modules/perfect-scrollbar/css/perfect-scrollbar';
+

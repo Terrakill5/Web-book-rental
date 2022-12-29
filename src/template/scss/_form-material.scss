@@ -1,0 +1,51 @@
+/*Material inputs*/
+
+.form-material .form-group {
+	overflow: hidden;
+}
+
+.form-material .form-control {
+	background-color: rgba(0, 0, 0, 0);
+	background-position: center bottom, center calc(100% - 1px);
+	background-repeat: no-repeat;
+	background-size: 0 2px, 100% 1px;
+	padding: 0;
+	transition: background 0s ease-out 0s;
+}
+
+.form-material .form-control,
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+	background-image: linear-gradient($page-color-primary, $page-color-primary),
+		linear-gradient($form-material-color, $form-material-color);
+	border: 0 none;
+	border-radius: 0;
+	box-shadow: none;
+	float: none;
+}
+
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+	background-size: 100% 2px, 100% 1px;
+	outline: 0 none;
+	transition-duration: 0.3s;
+}
+
+//-webkit-autofill
+.form-material {
+	input,
+	textarea,
+	select {
+		&:-webkit-autofill {
+			// -webkit-box-shadow: inset 0 0 0px 9999px white, 0 0 8px rgba(102, 175, 233, 0.6) !important;
+			-webkit-box-shadow: inset 0 0 0px 9999px white, 0 0 0px rgba(102, 175, 233, 0.6) !important;
+			border-bottom: 1px solid $form-material-color !important;
+			transition: border-bottom 0.5s !important;
+
+			&:hover,
+			&:focus {
+				border-color: $page-color-primary !important;
+			}
+		}
+	}
+}

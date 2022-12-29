@@ -1,0 +1,70 @@
+// App
+
+/*==============================================================
+ For all pages
+ ============================================================== */
+
+#main-wrapper {
+	width: 100%;
+	background-color: $page-wrapper-bg;
+	overflow: hidden;
+}
+
+.page-wrapper {
+	position: relative;
+}
+
+/*******************
+ Breadcrumb and page title
+*******************/
+
+.page-titles {
+	background-color: $page-color-white;
+	padding: 12px calc(var(--bs-gutter-x, 1.5rem) * 0.5);
+	box-shadow: $shadow;
+	margin: 0 -25px 15px -25px;
+	h4 {
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.breadcrumb {
+		padding: 0px;
+		margin: 0px;
+		background-color: transparent;
+		font-size: 0.9rem;
+		li {
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+		.breadcrumb-item + .breadcrumb-item::before {
+			float: unset !important;
+			content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/></svg>');
+			opacity: 0.8;
+			width: 0.85rem;
+			height: 0.85rem;
+			display: inline-block;
+		}
+		.breadcrumb-item.active {
+			float: unset !important;
+			color: $page-color-primary;
+			font-weight: 500;
+		}
+	}
+}
+
+/*******************
+ Footer
+*******************/
+
+.footer {
+	bottom: 0;
+	color: inherit;
+	left: 0px;
+	padding: 5px 15px;
+
+	right: 0;
+	border-top: 1px solid $page-border-color;
+	background-color: $page-color-white;
+}

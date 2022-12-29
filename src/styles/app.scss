@@ -1,0 +1,26 @@
+@import '../template/scss/template.scss';
+@import '../template/scss/variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+@import 'variables';
+
+// sweetalert2
+@import 'node_modules/sweetalert2/src/sweetalert2';
+
+// react-datepicker
+// @import "node_modules/react-datepicker/src/stylesheets/datepicker";
+
+//toastmejs
+@import 'node_modules/toastmejs/src/sass/variables';
+@import 'variables';
+// @import "node_modules/toastmejs/src/sass/icons";
+@import 'toastme-icons';
+@import 'node_modules/toastmejs/src/sass/buttons';
+@import 'node_modules/toastmejs/src/sass/animations';
+@import 'node_modules/toastmejs/src/sass/notifications';
+// @import "node_modules/toastmejs/src/sass/theme-dark";
+// @import "node_modules/toastmejs/src/sass/theme-ligh";
+@import 'node_modules/toastmejs/src/sass/dialogs';
+
+@import 'style';
