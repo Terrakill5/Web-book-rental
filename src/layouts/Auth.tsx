@@ -23,7 +23,6 @@ const Auth = (): JSX.Element => {
 								<img src={logo} alt="Home" className="img-fluid" />
 							</a>
 						</div>
-
 						<Outlet />
 					</div>
 				</div>
