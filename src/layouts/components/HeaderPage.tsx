@@ -42,7 +42,7 @@ const HeaderPage = (): JSX.Element => {
 							>
 								<FontAwesomeIcon icon="fa-solid fa-circle-user" />
 								<span className="hidden-md-down ms-1">
-									Jose Briceño &nbsp;
+									Abel Palomino &nbsp;
 									<FontAwesomeIcon icon="fa-solid fa-angle-down" />
 								</span>
 							</a>

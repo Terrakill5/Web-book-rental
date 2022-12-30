@@ -292,3 +292,7 @@ input[type='number'] {
 	-moz-appearance: textfield;
 }
 // Hide Arrows From Input Number
+
+.map__body {
+	min-height: calc(100vh - 256px);
+}

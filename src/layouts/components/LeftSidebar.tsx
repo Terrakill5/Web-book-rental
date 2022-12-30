@@ -11,7 +11,7 @@ const LeftSidebar = (): JSX.Element => {
 							<a className="has-arrow" href="#" aria-expanded="false">
 								<span className="nav-item-content">
 									<FontAwesomeIcon icon="fas fa-user-circle" />
-									<span className="hide-menu">Jose Briceño</span>
+									<span className="hide-menu">Abel Palomino</span>
 								</span>
 							</a>
 							<ul aria-expanded="false" className="collapse">
@@ -46,6 +46,7 @@ const LeftSidebar = (): JSX.Element => {
 							<ul aria-expanded="false" className="collapse">
 								<li>
 									<Link to="/editorial">Editoriales</Link>
+									<Link to="/map">Mapa</Link>
 								</li>
 							</ul>
 						</li>

@@ -30,7 +30,7 @@ const index = (): JSX.Element => {
 					<Card>
 						<Card.Body>
 							<h2 className="text-muted">Bienvenido al sistema</h2>
-							<h3 className="h5">Jose Briceño</h3>
+							<h3 className="h5">Abel Palomino Rojas</h3>
 						</Card.Body>
 					</Card>
 				</Col>
